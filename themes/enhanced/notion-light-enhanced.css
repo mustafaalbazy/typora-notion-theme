@@ -17,7 +17,7 @@
     --code-color: #9a6e3a;
     --border-radius: 4px;
     --font-size: 16px;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family: "IBM Plex Sans Arabic";
     --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
     --heading-char-color: var(--light-trait-400);
     --color-popover-bg-color: var(--text-color);
@@ -31,6 +31,10 @@
     --active-file-border-color: var(--bg-color);
     --window-border: 1px solid var(--bg-color);
     --focus-ring-color: transparent;
+}
+
+#write {
+    direction: rtl;
 }
 
 html {
@@ -153,6 +157,7 @@ a:hover {
 }
 
 sup.md-footnote {
+    direction: ltr;
     background-color: var(--light-trait-400);
     color: #888884;
 }
@@ -209,9 +214,9 @@ mark {
 }
 
 blockquote {
-    margin-left: 1.75px;
-    margin-right: 0px;
-    border-left: 4px solid var(--text-color);
+    margin-left: 0;
+    margin-right: 2rem;
+    border-right: 4px solid var(--text-color);
     padding: 10px 14px 7px 22px;
     /* change the quote highlight */
     background-color: #f7f7f7;
@@ -290,6 +295,7 @@ kbd {
 }
 
 #write pre.md-meta-block {
+    direction: ltr;
     padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
