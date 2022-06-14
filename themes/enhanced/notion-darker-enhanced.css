@@ -286,6 +286,7 @@ kbd {
 
 /* Inline code fences*/
 code {
+    unicode-bidi: plaintext;
     border: none;
     background-color: var(--inline-code-bg-color);
     border-radius: var(--border-radius);
@@ -296,6 +297,7 @@ code {
 }
 
 .md-fences {
+    direction: ltr;
     margin-bottom: 15px;
     margin-top: 15px;
     padding-top: 8px;

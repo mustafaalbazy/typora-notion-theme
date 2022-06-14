@@ -49,6 +49,7 @@ body {
 }
 
 code {
+    direction: ltr;
     background-color: #f7f6f3;
     padding: 0 2px 0 2px;
 }
@@ -279,7 +280,9 @@ kbd {
 }
 
 .md-fences, code, tt {
+    unicode-bidi: plaintext;
     border: none;
+    color: #711b31;
     background-color: #f7f6f3;
     border-radius: var(--border-radius);
     padding: 2px 4px 0px 4px;
@@ -288,6 +291,7 @@ kbd {
     font-family: var(--monospace)
 }
 .md-fences {
+    direction: ltr;
     margin-bottom: 15px;
     margin-top: 15px;
     padding-top: 8px;
